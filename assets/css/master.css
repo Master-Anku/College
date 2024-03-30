@@ -1,0 +1,139 @@
+/* Global Veriable */
+:root{
+    /* typography */
+    --font-family:"Montserrat" sans-serif;
+    --headline-font: 'Source Serif Pro', serif;
+    --ft-size:1rem;
+    --fw-l:300;
+    --fw-m:500;
+    --fw-b:700;
+
+
+   /* color */
+   --one-color:rgb(19, 19, 154); 
+   --two-color:black;
+   --three-color:red;  
+   --four-color:rgb(237, 99, 209);
+   --five-color:#ffffff;
+   --background-color:rgb(12, 238, 238);
+   --boder-radius: 6px;
+
+
+
+
+ /* helper */
+ --spacer: 1rem;
+ --spacer-dbl: calc(var(--spacer) * 2);
+ --border-radius: 6px;
+ --shadow: 0 0 6px rgba(0,0,0..3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--five-color);
+    color: var(--two-color);
+    font-family: var(--font-family);
+    font-weight: var(--fw-l);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--five-color);
+    font-family:var(--headline-font);
+}
+
+h2 {
+    color: var(--five-color);
+    font-family: var(--headline-font);
+}
+
+p {
+    margin-bottom: var(--spacer);
+    font-size: var(--ft-size);
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+header{
+    background-color: var(--four-color);
+    padding: var(--spacer-dbl); 
+}
+
+.btn{
+    border-radius: var(--boder-radius);
+    box-shadow: var(--shadow);
+    background-color: var(--background-color);
+    color: var(--two-color);
+    cursor: pointer;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: background-color  .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--three-color);
+}
+
+section.card{
+    display: flex;
+    gap: var(--spacer);
+    width: 80%;
+    margin: var(--spacer-dbl) auto;
+}
+.card article{
+    border: solid 1px var(--one-color);
+    border-radius: var(--boder-radius);
+    box-shadow: var(--shadow);
+}
+
+.card article.callout{
+    color: var(--one-color);
+}
+.card h2{
+    text-align: center;
+    background-color: var(--one-color);
+    color: var(--five-color);
+    margin-top: 0;
+    padding: 0.25rem;
+}
+
+.card figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-style: italic;
+    padding: .25rem;
+}
+
+.card p{
+    padding: var(--spacer) var(--spacer) 0;
+
+}
+
+.card  .btn{
+    display: inline-block;
+    margin: 0 0 var(--spacer) var(--spacer);
+    border-radius: var(--boder-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--one-color);
+    padding: 6px 12px;
+}
+
+footer {
+    background-color: var(--one-color);
+    color: var(--five-color);
+    text-align: center;
+    font-size: .8rem;
+    padding: 1rem 0 .25rem;
+    margin-top: auto;
+}
